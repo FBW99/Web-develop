@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page 3</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: rgb(19, 11, 11);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-weight: bold;
+    }
+
+    div {
+      display: flex;
+      flex: 1;
+    }
+
+    .left, .center, .right {
+      display: flex;             
+      justify-content: center;     
+      align-items: center;         
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .left {
+      background-color: lightcoral;
+      flex: 1;
+      padding: 25px;
+    }
+
+    .center {
+      background-color: lightgreen;
+      flex: 2;
+      padding: 50px;
+    }
+
+    .right {
+      background-color: lightblue;
+      flex: 1;
+      padding: 25px;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>Header</header>
+
+  <div >
+    <div class="left">Left</div>
+    <div class="center">Center</div>
+    <div class="right">Right</div>
+  </div>
+
+  <footer>Footer</footer>
+</body>
+</html>
