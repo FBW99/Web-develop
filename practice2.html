@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DayOne</title>
+  <link rel="icon" type="image/x-icon" href="ph1.jpeg">
+
+  <style>
+    body {
+      background-image: url('https://images.pexels.com/photos/5475793/pexels-photo-5475793.jpeg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      color: black;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: blue;
+      border: 2px solid tomato;
+      padding: 15px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.8);
+    }
+    p{
+        color: white;
+    }
+
+    h2 mark {
+      background-color: red;
+      color: white;
+      padding: 3px 8px;
+      border-radius: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    table, th, td {
+      border: 2px double black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #00bcd4;
+    }
+
+    td:nth-child(even), th:nth-child(even) {
+      background-color: #b2ebf2;
+    }
+
+    picture img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 50px;
+      border: 3px solid #333;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    a {
+      color: blue;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    blockquote {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 15px;
+      border-left: 5px solid green;
+      margin: 20px 0;
+    }
+
+    address {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <picture>
+    <source media="(min-width: 650px)" srcset="https://images.pexels.com/photos/5475793/pexels-photo-5475793.jpeg">
+    <source media="(min-width: 465px)" srcset="https://images.pexels.com/photos/5475752/pexels-photo-5475752.jpeg">
+    <img src="ph1.jpeg" alt="Profile photo" width="300" height="200">
+  </picture>
+
+  <h1>My First Day Website</h1>
+
+  <h2><mark>About Myself</mark></h2>
+<div>
+  <p>My name is <strong title="The person who I love most">Faruk</strong>. I am from <i>Wolkite University</i>, a 3rd-year <em>Software Engineering</em> student.
+    I would like to say <mark>thank you</mark> for giving me this <small>fantastic chance</small>. In my free time,
+    I like playing <del>football</del> <ins>volleyball</ins> and watching web programming videos.
+    My future ambition is to be a <sub>cybersecurity</sub> expert and <sup>data analyst</sup>.
+  </p>
+</div>
+ <h3 style="background-color: yellow;">People I Appreciate in the World</h3>
+<pre>
+1. My Parents - for their endless love, care, and support.  
+2. My Teachers - for guiding me with knowledge and wisdom.  
+3. My Friends - for always encouraging me to move forward.  
+4. Great Innovators - like Elon Musk and Bill Gates, who inspire creativity and technology.  
+5. Myself - for never giving up and continuing to grow every single day.
+</pre>
+
+  <table>
+    <caption style="color: white;"><b>Student Information</b></caption>
+    <tr>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Department</th>
+      <th colspan="2">Year</th>
+    </tr>
+    <tr>
+      <td>Faruk Bati</td>
+      <td>M</td>
+      <td>Software Engineering</td>
+      <td>3rd</td>
+      <td>2025</td>
+    </tr>
+    <tr>
+      <td>Hamza Safi</td>
+      <td>M</td>
+      <td>Software Engineering</td>
+      <td>4th</td>
+      <td>2024</td>
+    </tr>
+    <tr>
+      <td>Hikma Mohammed</td>
+      <td>F</td>
+      <td>Computer Science</td>
+      <td>5th</td>
+      <td>2025</td>
+    </tr>
+  </table>
+
+  <p><a href="#INSA">Information Network Security Agency.</a></p>
+
+  <h4>Thank you for coming!!!</h4>
+
+  <img src="https://images.pexels.com/photos/5475752/pexels-photo-5475752.jpeg" width="250" height="200" alt="Laptop user">
+
+  <p>Click for more: 
+    <a href="https://www.pexels.com/photo/person-using-black-laptop-computer-5475752/" target="_blank">View More Images</a>
+  </p>
+
+  <a href="mailto:farukbati7@gmail.com">Send Email</a>
+  <hr>
+  <a href="https://www.youtube.com" title="Go to YouTube page" target="_blank">YOUTUBE</a>
+
+  <p>Here is a quote from WWF's website:</p>
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization,
+    WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver
+    innovative solutions that protect communities, wildlife, and the places in which they live.
+  </blockquote>
+
+  <p>When I was in high school, my friend said: <q>Prevention is better than cure.</q></p>
+
+  <p><abbr id="INSA" title="Information Network Security Agency.">INSA</abbr> was founded in 1948.</p>
+
+  <p><cite>The Silence</cite> by Abubeker Almanur</p>
+
+  <address>
+    Name: John Dalton<br>
+    Visit at: johndalton1@gmail.com<br>
+    Year: 1975<br>
+  </address>
+
+</body>
+</html>

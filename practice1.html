@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faruk's Creativity</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://images.pexels.com/photos/5475763/pexels-photo-5475763.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: "Poppins", Arial, sans-serif;
+      color: white;       
+      
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #a7f3d0;
+    }
+    h3{
+        text-align: left;
+        color: rgb(238, 162, 162);
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .creativity {
+      color: #7ae9d1;
+      font-size: 36px;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 25px 0;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    table, th, td {
+      border: 2px solid white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    th {
+      background: rgba(0, 0, 0, 0.8);
+      font-size: 18px;
+    }
+
+    td {
+      font-size: 16px;
+    }
+
+    form {
+      margin-top: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    
+
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="password"],
+    select,
+    textarea {
+      background: rgba(255, 255, 255, 0.8);
+      color: #000;
+    }
+
+    input[type="submit"], button {
+      background: #00bcd4;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover,
+    button:hover {
+      background: #0097a7;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      border: 2px solid #fff;
+    }
+
+    blockquote {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-left: 5px solid #00bcd4;
+      margin: 20px 0;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.8);
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    footer a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    FARUK'S CREATIVITY
+  </header>
+
+  <main>
+    <h2>Future Your Creativity</h2>
+    <p><span class="creativity">Creativity</span> is the power to turn dreams into reality. It’s the force that drives innovation,
+      inspires change, and gives life to new ideas. When we think creatively, we don’t just imagine a better world — 
+      we build it, one idea at a time.</p>
+      <h3>Here are about <b><i>sup</i></b> and <b><i>sub</i></b> in the html</h3>
+    <p> Example of Sub: H<sub>2</sub>O</p>
+    <p> Example of Sup: 10<sup>2</sup></p>
+    <h3> Also here are about <i>comments</i> in HTML</h3>
+    <p><i>Comments are ===INVISIBLE===</i></p>
+    <p># <"!--comments are here--"></p>
+    <table>
+        <h3 style="text-align: center;">The below are about table</h3>
+      <caption><h2>List of Information</h2></caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th colspan="2">Department</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hamza</td>
+          <td>21</td>
+          <td>CS</td>
+          <td>IT</td>
+          <td>2025</td>
+        </tr>
+        <tr>
+          <td>Faruk</td>
+          <td>20</td>
+          <td>SE</td>
+          <td>IS</td>
+          <td>2025</td>
+        </tr>
+      </tbody>
+    </table>
+<h3>This is also about submitting information of about someone</h3>
+    <form action="process.php" method="post">
+      <label>Enter First Name</label>
+      <input type="text" name="FirstName" placeholder="Enter first name">
+
+      <label>Enter Last Name</label>
+      <input type="text" name="LastName" placeholder="Enter last name">
+
+      <label>Email</label>
+      <input type="text" name="Email" placeholder="Enter your email">
+
+      <label>Gender</label>
+      <select name="Gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label>Age</label>
+      <input type="number" name="Age" value="30">
+
+      <label>Birthday</label>
+      <input type="date" name="Birthday">
+
+      <label>Write Short Paragraph</label>
+      <textarea rows="5" cols="40" placeholder="Write something..."></textarea>
+
+      <input type="submit" value="Submit">
+      <button type="button">Click me for more information</button>
+    </form>
+<h3>This is about blockquote</h3>
+    <blockquote cite="http://traversymedia.com">
+      “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat harum doloribus ut optio soluta voluptatibus esse reiciendis sint odit blanditiis dicta dolor, accusamus molestiae at rem! Velit quidem ratione sunt.”
+    </blockquote>
+<h3>This is about abbrevation</h3>
+    <p>The <abbr title="World Wide Web">WWW</abbr> is awesome!</p>
+    <p><cite>HTML Crash Course</cite> by Faruk Man</p>
+  </main>
+
+  <footer>
+    © 2025 Faruk Web | Designed by <a href="#">Faruk</a>
+  </footer>
+
+</body>
+</html>
