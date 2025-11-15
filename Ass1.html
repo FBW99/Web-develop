@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page 1</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-    }
+<style>
 
-    .left {
-      background-color: aquamarine;
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      font-weight: bold;
-    }
+.Container div {
+  float: left;
+  height: 100vh;
+}
 
-    .right {
-      background-color: #5d478b;
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2rem;
-      font-weight: bold;
-    }
-  </style>
+.Firstpart {
+  
+  width: 50%;
+  background-color: rgb(62, 255, 44);
+  text-align: center;
+}
+
+.secondpart {
+  
+  width: 50%;
+  background-color: rgb(243, 38, 38);
+  text-align: center;
+}
+
+</style>
 </head>
 <body>
-  <div class="left">Left</div>
-  <div class="right">Right</div>
+
+  <div class="Container">
+    <div class="Firstpart">
+      <h2>PART 1</h2>
+    </div>
+
+    <div class="secondpart">
+      <h2>PART 2</h2>
+    </div>
+  </div>
+
 </body>
 </html>

@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 2</title>
-    <style>
-     body{
-        margin: 0;
-        display: flex;
-        height: 100vh;
+  <style>
+    .Container div {
+      height: 100vh;
+      float: left;
     }
-  
-    div{
-         flex: 1;
-        text-align: center;
-        align-content: center;
-        font-size: 2rem;
-        font-weight: bold;
+
+    .left {
+      width: 33%;
+      background-color:rgb(55, 247, 103);
+      text-align: center;
+      
     }
-    </style>
-   
+
+    .Center {
+      width: 33%;
+      background-color: rgb(250, 7, 7);
+      text-align: center;
+      
+    }
+
+    .Right {
+      width: 33%;
+      background-color: rgb(20, 250, 108);
+      text-align: center ;
+      
+    }
+  </style>
 </head>
 <body>
-    <div  style="background-color: rgb(192, 152, 152);">Left</div>
-    <div style="background-color: rgb(101, 153, 142);">Center</div>
-    <div  style=" background-color: rgb(148, 113, 179);">Right</div>
+  <div class="Container">
+    <div class="left"><h1>Left</h1></div>
+    <div class="Center"><h1>Center</h1></div>
+    <div class="Right"><h1>Right</h1></div>
+  </div>
 </body>
 </html>
