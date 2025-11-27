@@ -1,20 +1,55 @@
 <!DOCTYPE html>
 <html>
+  <title>website</title>
+  <link rel="icon" type="image/x-icon" href="photo1.jpg" style="border-radius: 15px;">
 <style>
+
   body{
-    background-image: url(ANW.JPG.jpg);
+    background-image: url(/dimages/Anwar.jpg);
     background-size: cover;
     background-attachment: fixed;
   }
 table, th, td {
   border:1px solid black;
-   border-collapse:collapse;
+  border-color:rgb(255, 0, 100);
+  border-collapse: collapse;
+  border-style: dashed;
+  
+}
+th,td{
+ 
+  padding-left: 20px;
+  padding-right: 15px;
+  padding-bottom: 16px;
+  padding-top: 20px;
+
+}
+.city{
+  background-color: rgb(87, 223, 143);
+  color: rgb(61, 48, 122);
+}
+.saudi{
+  background-color: rgb(212, 60, 205);
+}
+#America{
+  background-color: brown;
 }
 </style>
+<link rel="stylesheet" href="app.css">
 <body>
-<h2 style="font-family: serif; font-size: 30px;">About table , ordered and unordered </h2>
+<picture>
+  <source media="(min-width:650px)" srcset="photo1.jpg">
+  <source media="(min-width:450px)" srcset="photo3.webp">
+  <img src="photo2.jpg" alt="my photos" width="600px" height="500px">
+</picture>
+
+<h2 style="font-family: serif; font-size: 30px; border: red 2px solid; color:hsl(0,40%,50%);">About table , ordered and unordered </h2>
 <table style="width:100%">
-    <caption style="font-size: large;">Information of students</caption>
+  <colgroup>
+    <col span="2"  style="background-color: yellow;">
+  </colgroup>
+    <caption style="font-size: 20px;">Information of students</caption>
+    
   <tr>
     <th>Person 1</th>
     <th>Person 2</th>
@@ -31,7 +66,49 @@ table, th, td {
     <td>10</td>
   </tr>
 </table>
-<p>To understand the example better, we have added borders to the table.</p>
+
+<bdo dir="rtl">this is the override sentences</bdo>
+<span>good morning</span>
+<div>good afternoon</div>
+<p>To understand the example better,<br> we have added borders to the table.</p>
+<hr color="black">
+<div class="city saudi">
+  <h3>Saudi Arabia</h3>
+  <p>I love to live in Saudi Arabia</p>
+</div>
+<div class="city">
+  <h3>Ethiopia</h3>
+  <p>I want to visit Ethiopia country</p>
+</div>
+<div id="America">
+  <h3>America</h3>
+  <p>The judaism country</p>
+</div>
+<form action="process.php" method="get">
+    <h2>The above are the form</h2>
+
+    <label for="fname">First Name</label><br>
+    <input type="text" id="fname" name="fname" value="faruk"><br>
+
+    <label for="lname">Last name</label><br>
+    <input type="text" id="lname" name="lname" value="Bati"><br>
+
+    <p>Choose the best one</p>
+
+    <input type="checkbox" id="lang" name="language" value="HTML">
+    <label for="lang">HTML</label><br>
+
+    <input type="submit" value="submit">
+</form>
+
+<h3 title="Anwar is my youngest brother who i Love you"><mark>ANWAR</mark></h3>
+<p>my favorite color is<ins title="inserted word"> blue</ins> red</p>
+<a href="practice2.html">visit our website for more information</a>
+<p><a href="practice1.html">faruk's</a></p>
+<a href="https://www.youtube.com" target="_blank">YouTube</a><br><br>
+<a href="web design.html"><img src="/images/best1.jpg" alt="sample design" style="width: 40px; height: 40px;"></a><br><br>
+<a href="mailto:farukbati8@gmail.com" title="go to the email">send email</a>
+<button onclick="window.location.href='https://wku.edu.et/';">Visit WKU</button>
 <ul style="list-style-type:disc;">
     <li>Coffee</li>
     <li>Tea</li>
@@ -71,7 +148,7 @@ table, th, td {
     <dd>- white cold drink</dd>
 </dl>
 
-<img src="ANW.JPG.jpg" width="300" height="400"  alt="my photos">
+<img src=".../HTML progress/ph1.JPG" width="300" height="400"  alt="my photos">
 
 </body>
 </html>
