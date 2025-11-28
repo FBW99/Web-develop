@@ -1,141 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MY WEBSITE</title>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        
-      }
-      header {
-        background-color: brown;
-        color: white;
-        padding: 15px;
-        display: flex;
-        align-items: center;
-      }
-      
-      header img {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        border: 3px solid white;
-        margin-right: 15px;
-        transition: transform 0.3s ease;
-      }
-       header img:hover {
-        transform: scale(1.1);
-      }
-      .container {
-        display: flex;
-        flex: 1;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faruk Bati | Portfolio</title>
 
-     nav {
-        background: #f8f9fa;
-        width: 220px;
-        padding: 25px;
-        border-right: 2px solid #ddd;
-        box-shadow: 4px 0 10px rgba(243, 90, 90, 0.05);
-      }
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-       nav a {
-        display: block;
-        padding: 12px 15px;
-        margin: 8px 0;
-        text-decoration: none;
-        color: #333;
-        border-radius: 8px;
-        font-weight: 500;
-        transition: all 0.3s ease;
-      }
-      nav a:hover {
-        background-color: rgb(175, 23, 23);
-        opacity: 0.7;
-      }
-     main {
-        flex: 1;
-        padding: 40px;
-        background: white;
-        border-radius: 15px;
-        margin: 20px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-        animation: fadeIn 0.8s ease;
-      }
-      ul{
-        font-family: serif;
-      }
-       footer {
-        background: #333;
-        color: white;
-        text-align: center;
-        padding: 12px 0;
-        font-size: 14px;
-      }
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    </style>
-  </head>
-  <body>
-    <header>
-      <img src="Faruk.jpg" alt="my photo" />
-      <div>
-        <h2>Faruk Bati</h2>
-        <p>ID: NSR/0305/16</p>
-      </div>
-    </header>
-    <div class="container">
-      <nav>
-        <a href="Ass1.html">Ass 1</a>
-        <a href="Ass2.html">Ass 2</a>
-        <a href="Ass3.html">Ass 3</a>
-        <a href="practice1.html">Lab 1</a>
-        <a href="practice2.html">Lab 2</a>
-        <a href="practice3.html">Lab 3</a>
-        <a href="practice4.html">Lab 4</a>
-        <a href="practice5.html">Lab 5</a>
-        <a href="Bootstrap.html">Bootstrap</a>
-      </nav>
-      <main>
-  <h3>About Me</h3>
-  <p style="font-family: serif;">
-    Hi, I'm <strong>Faruk Bati</strong>. I was born and raised in <strong>Adaba, Shashemene</strong>. 
-    I completed my high school education at <strong>Adaba High School</strong> and began my university 
-    journey in <strong>2023</strong>, where I'm currently studying <strong>Software Engineering</strong>.
-  </p>
-  <p style="font-family: serif;">
-    I'm passionate about technology and continuously learning new tools to solve real-world problems.
-    My ultimate goal is to become a skilled <strong>Data Analyst</strong> and <strong>Cybersecurity Professional</strong>.
-    I believe in hard work, creativity, and innovation as key drivers of success in the tech world.
-  </p>
+  <style>
+    body {
+      background: #f5f6fa;
+      font-family: "Segoe UI", sans-serif;
+    }
 
-  <h3>My Skills</h3>
-  <ul>
-    <li><strong>Programming Languages:</strong> Python(At beginner level), Java, C++</li>
-    <li><strong>Web Development:</strong> HTML, CSS</li>
-    <li><strong>Database Management:</strong> MySQL, SQL Server(At beginner level)</li>
-    <li><strong>Version Control:</strong> Git & GitHub(At beginner leve)_</li>
-    <li><strong>Soft Skills:</strong> Teamwork, Communication, Problem Solving, Adaptability</li>
-  </ul>
+    .profile-img {
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+      transition: .4s;
+    }
+    .profile-img:hover {
+      transform: scale(1.1);
+    }
 
-  <h3>Interests</h3>
-  <p style="font-family: serif;">
-    Outside of coding, I enjoy exploring emerging technologies, watching tech tutorials, 
-    reading about cybersecurity trends, and collaborating on innovative software projects.
-    I'm also interested in AI, cloud computing, and open-source development.
-  </p>
-</main>
+    .sidebar {
+      min-height: 100vh;
+      background: white;
+      box-shadow: 3px 0 10px rgba(0,0,0,0.05);
+    }
+    .sidebar a {
+      font-weight: 600;
+      padding: 12px 15px;
+      border-radius: 8px;
+      color: #444;
+      display: block;
+      transition: .3s;
+    }
+    .sidebar a:hover {
+      background: #b22222;
+      color: white;
+    }
+
+    .skill-card {
+      padding: 20px;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: .3s;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="py-3 px-4 d-flex align-items-center text-white" style="background: #8b0000;">
+    <img src="Faruk.jpg" class="profile-img me-3" alt="Profile">
+    <div>
+      <h2 class="mb-0">Faruk Bati</h2>
+      <p class="mb-0">Software Engineering Student | NSR/0305/16</p>
     </div>
-      <footer>
-      <p>&copy; 2025 | Designed by Faruk Bati | Software Engineering Student</p>
-    </footer>
-  </body>
+  </header>
 
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="col-md-3 col-lg-2 p-4 sidebar">
+        <h5 class="fw-bold mb-4 text-center">Menu</h5>
+        <a href="ass1.html"><i class="bi bi-journal-text me-2"></i>Assignment 1</a>
+        <a href="ass2.html"><i class="bi bi-journal-text me-2"></i>Assignment 2</a>
+        <a href="ass3.html"><i class="bi bi-journal-text me-2"></i>Assignment 3</a>
+        <a href="practice1.html"><i class="bi bi-laptop me-2"></i>Lab 1</a>
+        <a href="practice2.html"><i class="bi bi-laptop me-2"></i>Lab 2</a>
+        <a href="practice3.html"><i class="bi bi-laptop me-2"></i>Lab 3</a>
+        <a href="practice4.html"><i class="bi bi-laptop me-2"></i>Lab 4</a>
+        <a href="practice5.html"><i class="bi bi-laptop me-2"></i>Lab 5</a>
+        <a href="bootstrap.html"><i class="bi bi-bootstrap me-2"></i>Bootstrap</a>
+      </aside>
+      <main class="col-md-9 col-lg-10 p-5">
+        <div class="p-5 mb-4 text-white rounded" style="background:#8b0000;">
+          <h1 class="fw-bold">Welcome to My Portfolio</h1>
+          <p class="fs-5">Exploring Technology | Learning | Building | Innovating</p>
+        </div>
+
+        <section class="mb-5">
+          <h3 class="fw-bold">About Me</h3>
+          <p class="fs-5">
+            I'm <strong>Faruk Bati</strong> from <strong>Adaba, Shashemene</strong>.  
+            I started my Software Engineering journey in <strong>2023</strong>.  
+            I am passionate about <strong>technology, data analytics, and cybersecurity</strong>.
+          </p>
+          <p class="fs-5">
+            My dream is to become a skilled <strong>Data Analyst</strong> and 
+            <strong>Cybersecurity Expert</strong>, using technology to solve real-world problems.
+          </p>
+        </section>
+        <section class="mb-5">
+          <h3 class="fw-bold mb-3">My Skills</h3>
+
+          <div class="row g-4">
+
+            <div class="col-md-4">
+              <div class="skill-card">
+                <h5 class="fw-bold"><i class="bi bi-code-square me-2"></i>Programming</h5>
+                <p>Python (Beginner), Java, C++</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="skill-card">
+                <h5 class="fw-bold"><i class="bi bi-window-sidebar me-2"></i>Web Development</h5>
+                <p>HTML, CSS</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="skill-card">
+                <h5 class="fw-bold"><i class="bi bi-database me-2"></i>Database</h5>
+                <p>MySQL, SQL Server (Beginner)</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="skill-card">
+                <h5 class="fw-bold"><i class="bi bi-git me-2"></i>Version Control</h5>
+                <p>Git & GitHub (Beginner)</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="skill-card">
+                <h5 class="fw-bold"><i class="bi bi-people me-2"></i>Soft Skills</h5>
+                <p>Teamwork, Communication, Problem Solving, Adaptability</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <section>
+          <h3 class="fw-bold">Interests</h3>
+          <p class="fs-5">
+            I enjoy watching tech tutorials, exploring cybersecurity, learning AI, and working on software projects.
+            I love discovering new technologies and building things that matter.
+          </p>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 | Designed by Faruk Bati | Software Engineering Student
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-
-
