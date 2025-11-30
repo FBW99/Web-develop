@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    width: 100%;
+    background-color: gray;
+    padding: 20PX;
+    float: left;
+}
+.icon{
+    width: 150px;
+    float:left;
+    height: 60px;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
