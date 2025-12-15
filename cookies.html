@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Cookies Platform</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    background-image: url(cookies1.webp);
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  header {
+    background: #4b2e81;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  .card {
+    background: rgb(172, 215, 226);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+  }
+
+  .card h3 {
+    margin-top: 0;
+    color: #5a2d0c;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+  }
+
+  button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 25px;
+    background: #ff8c42;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background: #e76f25;
+  }
+
+  .output {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* Cookie Banner */
+  .cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f15c5c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .cookie-banner button {
+    background: #4caf50;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #4d0aeb;
+    font-weight: bold;
+    font-size: 45px;
+  }
+</style>
+</head>
+
+<body>
+
+<header>🍪 Smart Cookies Platform</header>
+
+<div class="container">
+
+  <!-- Register Section -->
+  <div class="card">
+    <h3>Register</h3>
+    <p>Create your account (saved using cookies).</p>
+
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="email" id="email" placeholder="Enter your email">
+
+    <button onclick="registerUser()">Register</button>
+
+    <div class="output" id="registerOutput"></div>
+  </div>
+
+  <!-- View Registered User -->
+  <div class="card">
+    <h3>View Registered User</h3>
+    <p>Read user data stored in cookies.</p>
+    <button onclick="showUser()">Show User</button>
+    <div class="output" id="userOutput"></div>
+  </div>
+
+  <!-- Delete User -->
+  <div class="card">
+    <h3>Delete Account</h3>
+    <p>Remove registered user cookies.</p>
+    <button onclick="deleteUser()">Delete User</button>
+  </div>
+
+</div>
+
+<footer>
+ A Smart Cookie-Powered Experience for Saving Preferences and User Information
+</footer>
+
+<!-- Cookie Consent -->
+<div class="cookie-banner" id="cookieBanner">
+  <span>This website uses cookies to improve user experience.</span>
+  <button onclick="acceptCookies()">Accept</button>
+</div>
+
+<script>
+  /* Cookie Functions */
+  function setCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+      const date = new Date();
+      date.setTime(date.getTime() + days * 86400000);
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + value + expires + "; path=/";
+  }
+
+  function getCookie(name) {
+    const cookies = document.cookie.split("; ");
+    for (let c of cookies) {
+      const [key, value] = c.split("=");
+      if (key === name) return value;
+    }
+    return null;
+  }
+
+  function deleteCookie(name) {
+    document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+  }
+
+  /* Register User */
+  function registerUser() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+
+    if (!name || !email) {
+      alert("Please fill all fields");
+      return;
+    }
+
+    setCookie("username", name, 7);
+    setCookie("useremail", email, 7);
+
+    document.getElementById("registerOutput").innerText =
+      "Registration Successful!";
+  }
+
+  /* Show User */
+  function showUser() {
+    const name = getCookie("username");
+    const email = getCookie("useremail");
+
+    document.getElementById("userOutput").innerText =
+      name && email
+        ? `Name: ${name} | Email: ${email}`
+        : "No registered user found.";
+  }
+
+  /* Delete User */
+  function deleteUser() {
+    deleteCookie("username");
+    deleteCookie("useremail");
+    alert("User deleted successfully!");
+  }
+
+  /* Cookie Consent */
+  function acceptCookies() {
+    setCookie("cookieConsent", "accepted", 30);
+    document.getElementById("cookieBanner").style.display = "none";
+  }
+
+  window.onload = function () {
+    if (getCookie("cookieConsent") === "accepted") {
+      document.getElementById("cookieBanner").style.display = "none";
+    }
+  };
+</script>
+
+</body>
+</html>
