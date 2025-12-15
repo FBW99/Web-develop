@@ -10,7 +10,7 @@
     margin: 0;
     font-family: "Segoe UI", sans-serif;
     background: linear-gradient(135deg, #ffecd2, #fcb69f);
-    background-image: url(cookies1.webp);
+    background-image: url(cook.jpg);
     min-height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -83,17 +83,23 @@
 
   /* Cookie Banner */
   .cookie-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #f15c5c;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;    
+  transform: translateX(-50%); 
+  max-width: 950px; 
+  width: 90%;  
+  background: #2d2d2d;
+  color: white;
+  padding: 18px 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px; 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  z-index: 1000;
+  animation: slideUp 0.8s ease;
   }
 
   .cookie-banner button {
@@ -231,3 +237,4 @@
 
 </body>
 </html>
+
