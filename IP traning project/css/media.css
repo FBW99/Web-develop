@@ -1,0 +1,168 @@
+/* ================================
+                                   Responsive Design
+                           ================================ */
+
+ /* ===================== Header And Nav-bar media Query  ===================== */
+ 
+/*----TABLET RESPONSIVE------ */
+@media (max-width: 1024px) {
+    .search-box input {
+        width: 120px;
+    }
+}
+
+/*----MOBILE RESPONSIVE-----*/
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+        font-size: 20px;
+        color: #444;
+    }
+     #menuBtn {
+        display: block;
+    }
+
+    #closeBtn {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background-color: #35424A;
+        color: white;
+        padding: 20px;
+        gap: 20px;
+        text-align: center;
+        border-top: 1px solid #ddd;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+     /* Show menu when active */
+    .nav-list.active {
+        display: flex;
+    }
+}
+
+/* ===================== HOME Section media Query  ===================== */
+
+/* ---------- Tablets (max-width: 992px) ---------- */
+@media (max-width: 992px) {
+
+    .home-wrap {
+        height: 420px;
+    }
+
+    .home-img img {
+        height: 420px;
+        object-fit: cover;
+    }
+
+
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home-content p {
+        font-size: 1.4rem;
+    }
+
+    .home-btn a {
+        padding: 8px 18px;
+        font-size: 1rem;
+    }
+}
+
+/*  Mobile */
+@media (max-width: 768px) {
+
+    .home-wrap {
+        height: 380px;
+        border-radius: 12px;
+    }
+
+    .home-img img {
+        height: 380px;
+    }
+
+    .home-content h1 {
+        font-size: 2.7rem;
+    }
+
+    .home-content p {
+        font-size: 1.5rem;
+    }
+
+    .home-btn {
+        gap: 10px;
+    }
+
+    .home-btn a {
+        padding: 7px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================== About us Sction Responsive =============================== */
+
+/* Tablet */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-img img {
+        max-width: 520px;
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .about {
+        padding: 50px 5%;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    .about-btn {
+        padding: 8px 20px;
+    }
+}
+
+
+/* ========================================   Contact page Responsive   =============================== */
+
+@media (max-width: 900px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ==================================   Footer page Responsive   ================================= */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons a {
+        margin: 0 10px;
+    }
+}
