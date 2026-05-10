@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "src",
+			"path": "."
+		},
+		{
+			"name": "Chat-App",
+			"path": "../Chat-App"
+		},
+		{
+			"name": "target",
+			"path": "../target"
+		}
+	]
+}

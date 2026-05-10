@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p> please know about prompt</p>
+<p id="demo"></p>
+<button onclick="myfunction()">Try again</button>
+
+<script>
+  function myfunction(){
+    let person=prompt("Enter your name");
+    if(person != null){
+      document.getElementById("demo").innerHTML="Hello  "+  person +" How are you doing";
+    }
+    else{
+      window.alert="Thank you";
+    }
+  }
+
+</script>
+</body>
+</html>

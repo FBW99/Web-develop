@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+}
+.main{
+    width:100%;
+    background-image: url(pho66.jpg);
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+
+}
+.navbar{
+    width:cover;
+    height:100px;
+    margin:auto;
+    background-color: tomato;
+    justify-content: space-between;
+}
+.icon{
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif ;
+    padding-left: 20px;
+    padding-top: 15px;
+    justify-content: space-between;
+    text-align: left;
+    
+    
+}
+.menu{
+    float: right;
+    margin-right: 50px; 
+    margin-top: 20px;  
+    
+}
+.menu ul{
+    display: flex; 
+    align-items: center;
+    margin-right: -20px;
+    margin-top: -20px;
+
+}
+.menu ul li{
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 7px;
+    margin-right: -5px;
+    padding-left: 30px;
+    font-size: 18px;
+    
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: 0.9s ease-in-out;
+    border: solid white 2px;
+    background-color: black;
+}
+.menu ul li a:hover{
+    text-transform:unset;
+   }
+.content{
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+    font-size: 30px;
+}
+.par{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding-top: 20px;
+}
+.cn{
+    width: 200px;
+    height: 50px;
+    background: tomato;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 50px;
+}
