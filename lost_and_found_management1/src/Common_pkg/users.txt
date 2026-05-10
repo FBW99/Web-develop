@@ -1,0 +1,5 @@
+1d6676436775,admin,2121,admin
+3f2d706926ab,Belay,2222,student
+55f3ddef63e8,faruk,3333,student
+fdb1ab32e600,eliab,2003,student
+b149770f00c4,elia,2003,student

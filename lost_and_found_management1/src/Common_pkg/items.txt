@@ -1,0 +1,9 @@
+a45ef6e3-7dbe-4551-88f2-f5d03ab65106,PC,ITS VERY EXPENSIVE,ELECTRONICS,claimed,GIBI,030516,0928282828
+8ad38181-68b5-4cd1-ad8b-6fe72dc19227,MOBILE PHONE,S_24,ELECTRONICS,claimed,201 DORM,030534,0982828282
+63e04d28-7061-4834-9506-0252623fe4e8,shoes,adidas,clothes,claimed,207 Block,030516,0987631645
+e049ef98-fd06-4c5a-815a-12abdc2265c3,jacket,it is black,clothes,claimed,207 block,055617,0982776543
+b832bc67-c52e-443a-91d1-39b203ab8532,bag,it is red,material,claimed,central library,090918,farukbati8@gmail.com
+3b6bec5f,desktop,dell 2025,electronics,claimed,lab 11,080914,0987636783
+457ead6a,waterbottle,likeoval shape,material,claimed,central library,2134,093652473
+9642b19b,pc,16gbram,electroonics,lost,centreal libary,4321,09245353
+c606ade2,pc,16gbram,electroonics,found,centeral,8673,00987643
